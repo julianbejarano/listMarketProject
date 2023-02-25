@@ -29,6 +29,8 @@ const ListadoGastos = ({gastos,
               gasto = {gasto}
               setGastoEditar = {setGastoEditar}
               eliminarGasto = {eliminarGasto}
+              gastosPagados = {gastosPagados}
+              setGastosPagados = {setGastosPagados}
               />)})
             }
             </>

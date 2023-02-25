@@ -59,7 +59,7 @@ const trailingActions = () =>
  (<TrailingActions >
      <SwipeAction 
       onClick={()=>{
-        console.log("der")
+       // console.log("der")
         eliminarGasto(gasto.id)
          }
          }

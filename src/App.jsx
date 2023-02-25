@@ -106,7 +106,6 @@ function App() {
         setGastosPagados(gastosActualizados);
         //si el filtro esta activo y queremos ver los cambios en los datos filtrados
         if (filtro !== ""){
-          console.log ("llamando a función")
           filtrarDatos(gastosActualizados);
         }
       }
@@ -137,7 +136,7 @@ useEffect(()=>{
 
 const filtrarDatos = ((gastos) =>{
   if (filtro !== ""){
-    console.log("filtando: ", gastos)
+    //console.log("filtando: ", gastos)
     const gastosFiltrados = gastos.filter ((elemento)=>(elemento.categoria === filtro));
     setGastosFiltrados(gastosFiltrados);
   }
@@ -212,7 +211,7 @@ return (
             className= {` ${viewPagados ? (" bg-amber-100"):(" bg-teal-200")}  p-6 rounded-xl mx-4 m-4 font-extrabold `}
             onClick={()=>{
                 setViewPagados (!viewPagados)
-                console.log(viewPagados)
+                //console.log(viewPagados)
                 setFiltro("")
                 setGastosFiltrados([])
 
